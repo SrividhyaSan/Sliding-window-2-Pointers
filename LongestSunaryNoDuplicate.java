@@ -1,3 +1,20 @@
+Given a string, S. Find the length of the longest substring without repeating characters.
+
+
+Examples:
+Input : S = "abcddabac"
+
+Output : 4
+
+Explanation : The answer is "abcd" , with a length of 4.
+
+Input : S = "aaabbbccc"
+
+Output : 2
+
+Explanation : The answers are "ab" , "bc". Both have maximum length 2.
+
+Input : S = "aaaa"
 package StudyOpedia;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -53,3 +70,4 @@ public class LongestSunaryNoDuplicate {
         System.out.println("maxlen "+maxlen+" start index "+m+" end index "+p);
     }
 }
+
