@@ -1,6 +1,35 @@
-import java.util.HashMap;
-import java.util.Map;
-Given an array nums and an integer k. An array is called nice if and only if it contains k odd numbers. Find the number of nice subarrays in the given array nums.
+1.Given a binary array nums and an integer goal. Return the number of non-empty subarrays with a sum goal.
+A subarray is a continuous part of the array.
+Examples:
+Input : nums = [1, 1, 0, 1, 0, 0, 1] , goal = 3
+
+Output : 4
+
+Explanation : The subarray with sum 3 are
+
+[1, 1, 0, 1]
+
+[1, 1, 0, 1, 0]
+
+[1, 1, 0, 1, 0, 0]
+
+[1, 0, 1, 0, 0, 1].
+
+Input : nums = [0, 0, 0, 0, 1] , goal = 0
+
+Output : 10
+
+Explanation : Some of the subarray with sum 0 are
+
+[0]
+
+[0, 0]
+
+[0, 0, 0]
+
+[0, 0, 0, 0]
+
+2. Given an array nums and an integer k. An array is called nice if and only if it contains k odd numbers. Find the number of nice subarrays in the given array nums.
 A subarray is continuous part of the array.
 Examples:
 Input : nums = [1, 1, 2, 1, 1] , k = 3
@@ -17,6 +46,8 @@ Output : 0
 
 Explanation : The array does not contain any odd number.
  For this change odd num to 1 and even num to 0
+import java.util.HashMap;
+import java.util.Map;
 public class CountBinarySubaryKSum {
    public static void main(String [] args)  {
        int a[] = {1, 0, 0,1, 1, 0};
@@ -54,3 +85,4 @@ public class CountBinarySubaryKSum {
 //            j++;
 
 //        }
+
