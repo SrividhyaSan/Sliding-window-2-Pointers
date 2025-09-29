@@ -1,8 +1,3 @@
-package StudyOpedia;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
 // when condtn fails update i  value and condtn become true
 public class LongestSubsequenceWithTwoTypesNO {
     public static void main(String args[]){
