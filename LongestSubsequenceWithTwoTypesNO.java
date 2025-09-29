@@ -1,3 +1,15 @@
+Input : fruits = [1, 2, 1]
+
+Output : 3
+ LongestSubsequenceWithTwoTypesNum
+Explanation : We will start from first tree.
+
+Input : fruits = [1, 2, 3, 2, 2]
+
+Output : 4
+
+Input : fruits = [1, 2, 3, 4, 5]
+
 // when condtn fails update i  value and condtn become true
 public class LongestSubsequenceWithTwoTypesNO {
     public static void main(String args[]){
@@ -41,3 +53,4 @@ public class LongestSubsequenceWithTwoTypesNO {
         */
     }
 }
+
