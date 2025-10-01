@@ -33,6 +33,9 @@ public class LongestSubsequenceWithTwoTypesNO {
             else if (a[j]==type1 || a[j]==type2){
                 maxlen=Math.max(maxlen,j-i+1);
             }
+          while(i-1>-1 && a[i-1]==type1){ // 3,2,3,1,1,1 THIS WILL WORK WITHOUT While() BUT THIS 3,2,3,3,3,1,1,1 NEEDs  While()
+                i--;
+            }
             j++;
         }
         System.out.println("maxlen "+maxlen);
@@ -53,4 +56,5 @@ public class LongestSubsequenceWithTwoTypesNO {
         */
     }
 }
+
 
