@@ -55,7 +55,7 @@ public class LongestSubstringWithkDistinct {
                 distinctChars.add(ch);
             }
             // If we exceed k distinct characters, shrink the window
-            while (distinctChars.size() > k) {
+         if (distinctChars.size() > k) {
                 char startChar = s.charAt(i);
                 // Remove startChar only if it's not repeated in the window
                 boolean stillExists = false;
@@ -70,10 +70,11 @@ public class LongestSubstringWithkDistinct {
                 }
                 i++;
             }
-            maxlen = Math.max(maxlen, j - i + 1);
+             if(distinctChars.size() == k) maxlen = Math.max(maxlen, j - i + 1);
             j++;
         }
 
         System.out.println("maxlen  "+maxlen );
     }
 }
+
