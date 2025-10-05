@@ -1,3 +1,5 @@
+ TO FIND LONGEST SUBARRAY THAT CONTAINS ONLY +VE AND 0 , USE SLIDING WINDOW
+TO FIND LONGEST SUBARRAY THAT CONTAINS -VE, +VE AND 0 , USE PREFIXSUM MAP
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,4 +23,5 @@ public class LongestNegPosSubaryKsum {
        System.out.println("maxlen "+maxlen);
     }
 }
+
 
