@@ -1,3 +1,6 @@
+TO FIND LONGEST OR COUNT SUBARRAY = K SUM THAT CONTAINS ONLY +VE AND 0 , USE SLIDING WINDOW
+TO FIND LONGEST OR COUNT SUBARRAY = K SUM THAT CONTAINS -VE, +VE AND 0 , USE PREFIXSUM MAP
+    
 package StudyOpedia;
 
 public class CountSubaryKsum {
@@ -20,3 +23,4 @@ public class CountSubaryKsum {
         System.out.println(cnt);
     }
 }
+
