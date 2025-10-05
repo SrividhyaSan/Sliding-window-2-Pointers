@@ -15,8 +15,10 @@ public class LongestNegPosSubaryKsum {
            if (prefixsumMap.containsKey(prefixsum)){
                maxlen = Math.max(maxlen, i - prefixsumMap.get(prefixsum));
            }
+          if(!prefixsumMap.containsKey(sum)) // used to handle this case {2,0,0,3,0}
            prefixsumMap.put(sum,i);
        }
        System.out.println("maxlen "+maxlen);
     }
 }
+
